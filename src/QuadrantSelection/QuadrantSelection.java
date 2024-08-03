@@ -1,3 +1,5 @@
+package QuadrantSelection;
+
 import java.util.Scanner;
 
 public class QuadrantSelection {
@@ -8,13 +10,13 @@ public class QuadrantSelection {
 
         if (-1000<x && x<1000 && x!=0 && -1000<y && y<1000 && y!=0) {
             if (x<0 && y>0 ) {
-                System.out.println(1);
+                new showResult(1);
             } else if (x>0 && y>0) {
-                System.out.println(2);
+                new showResult(2);
             } else if (x<0 && y<0) {
-                System.out.println(3);
+                new showResult(3);
             } else if (x>0 && y<0) {
-                System.out.println(4);
+                new showResult(4);
             }
         } else {
             System.out.println("?");
