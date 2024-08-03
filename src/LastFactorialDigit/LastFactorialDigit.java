@@ -3,7 +3,7 @@ package LastFactorialDigit;
 import java.util.Scanner;
 
 public class LastFactorialDigit {
-    public static void main(String[] args) {
+    public static void getFactorial() {
         Scanner sc = new Scanner(System.in);
         int numCases = sc.nextInt();
         int[] factList = new int[numCases];
