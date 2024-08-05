@@ -1,11 +1,11 @@
 package CalculateAreaAndPerimeter;
 
-public class Square implements Figure, ShowInfo{
+public class Square extends Rectangle implements Figure, ShowInfo{
 
     double side, areaResult, perimeterResult;
     @Override
     public void getArea() {
-        areaResult = side*side;
+        areaResult = side*height;
     }
 
     @Override
@@ -18,9 +18,13 @@ public class Square implements Figure, ShowInfo{
         System.out.println("Square, area: " + areaResult);
         System.out.println("perimeter: " + perimeterResult);
     }
-    public Square (double side) {
+
+    public Square(double side, double height) {
+        super(side, height);
         this.side = side;
+        this.height = height;
         getArea();
         getPerimeter();
     }
+
 }

@@ -21,6 +21,7 @@ public class Rectangle implements Figure, ShowInfo {
         System.out.println("Rectangle, " + "area: " + AreaResult);
         System.out.println("perimeter: " + PerimeterResult );
     }
+
     public Rectangle(double base, double height) {
         this.base = base;
         this.height = height;
