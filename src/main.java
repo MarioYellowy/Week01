@@ -19,7 +19,7 @@ public class main {
         //triangle3.showInfo();
         Circle circle1 = new Circle(5);
         circle1.showInfo();
-        Square square1 = new Square(2);
+        Square square1 = new Square(2, 2);
         square1.showInfo();
     }
 }
