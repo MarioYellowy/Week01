@@ -12,21 +12,31 @@ public class main {
     public static void main(String[] args) {
 
         University jalaUniversity = new University();
-        jalaUniversity.addStudent(new Student("Raul", 2, new String[]{"Maths", "Science"}));
-        jalaUniversity.addStudent(new Student("Sara", 3, new String[]{"Science"}));
-        jalaUniversity.addStudent(new Student("Luis", 3, new String[]{"Maths", "Science"}));
-        jalaUniversity.addStudent(new Student("Liz", 2, new String[]{"Science"}));
 
-        jalaUniversity.addStudent(new Student("Gery", 1, new String[]{"Induction"}));
+        Student gery = new Student("Gery", 1, new String[]{"Induction"});
+        jalaUniversity.addStudent(gery);
 
-        jalaUniversity.assignCourseToStudent(3, "Database I");
+        Student maria = new Student("Maria", 1, new String[]{"Calculus"});
+        jalaUniversity.addStudent(maria);
+        maria.addCourse("Databases 1");
 
-        jalaUniversity.promoteStudent(2);
+        Student juanito = new Student("Juan", 1, new String[]{"Matematicas discretas"});
+        jalaUniversity.addStudent(juanito);
+        juanito.setGrade(2);
+        int gradeJuanito = juanito.getGrade();
+        System.out.println(gradeJuanito);
 
-        System.out.print("Science students: ");
-        jalaUniversity.filter("Science");
+        
+        Student luis = new Student("Luis", 1, new String[]{"science"});
+        jalaUniversity.addStudent(luis);
+        Student raul = new Student("Raul", 2, new String[]{"Maths", "science", "databases 1"});
+        jalaUniversity.addStudent(raul);
+        Student liz = new Student("Liz", 1, new String[]{"science"});
+        jalaUniversity.addStudent(liz);
         System.out.println();
-
+        System.out.print("Science students: ");
+        jalaUniversity.filter("science");
+        System.out.println();
         jalaUniversity.showAllStudents();
 
 
