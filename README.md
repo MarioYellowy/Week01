@@ -2,7 +2,8 @@
 
 ## Quadrant Selection
 Se realizo el flowchart en draw.io:
-![Diagrama sin título.drawio.png](src/QuadrantSelection/flowchart/Diagrama%20sin%20título.drawio.png)
+
+![flowChartQuadrant.drawio.png](src/QuadrantSelection/flowchart/flowChartQuadrant.drawio.png)
 
 Caso de prueba 1: 
 ![img.png](src/img.png)
