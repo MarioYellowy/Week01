@@ -1,6 +1,6 @@
 package CalculateAreaAndPerimeter;
 
-public class Square extends Rectangle implements Figure, ShowInfo{
+public class Square extends Rectangle{
 
     double side, areaResult, perimeterResult;
     @Override
@@ -26,5 +26,4 @@ public class Square extends Rectangle implements Figure, ShowInfo{
         getArea();
         getPerimeter();
     }
-
 }

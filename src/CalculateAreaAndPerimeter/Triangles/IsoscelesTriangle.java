@@ -10,12 +10,12 @@ public class IsoscelesTriangle extends Triangle implements ShowInfo {
     double perimeterResult;
 
     @Override
-    void getArea() {
+    public void getArea() {
         areaResult = (1.0 / 4.0) * base * Math.sqrt(4 * (side * side) - (base * base));
     }
 
     @Override
-    void getPerimeter() {
+    public void getPerimeter() {
         perimeterResult = (side*2) + base;
     }
     public IsoscelesTriangle(double side, double base) {

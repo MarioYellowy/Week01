@@ -6,13 +6,13 @@ public class ScaleneTriangle extends Triangle implements ShowInfo {
     double sideA, sideB, sideC, areaResult, perimeterResult, s;
 
     @Override
-    void getArea() {
+     public void getArea() {
         s = (sideA + sideB + sideC) / 2.0;
         areaResult = Math.sqrt(s * (s -sideA) * (s -sideB) * (s -sideC));
     }
 
     @Override
-    void getPerimeter() {
+    public void getPerimeter() {
         perimeterResult = sideA + sideB + sideC;
     }
 

@@ -6,12 +6,12 @@ public class EquilateralTriangle extends Triangle implements ShowInfo {
     double side, areaResult, perimeterResult;
 
     @Override
-    void getArea() {
+    public void getArea() {
         areaResult = ((side*side) * (Math.sqrt(3)) / 4) ;
     }
 
     @Override
-    void getPerimeter() {
+    public void getPerimeter() {
         perimeterResult = side*3;
     }
 

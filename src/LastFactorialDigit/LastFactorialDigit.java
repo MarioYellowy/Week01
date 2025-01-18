@@ -22,7 +22,7 @@ public class LastFactorialDigit {
         }
 
         for (int j : factList) {
-            System.out.println(j);
+            System.out.println("Result digt: " + j);
         }
     }
 }

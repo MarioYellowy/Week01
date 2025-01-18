@@ -1,6 +1,7 @@
 package CalculateAreaAndPerimeter.Triangles;
 
-public abstract class Triangle {
-    abstract void getArea();
-    abstract void getPerimeter();
+import CalculateAreaAndPerimeter.Figure;
+
+public abstract class Triangle implements Figure {
+
 }
