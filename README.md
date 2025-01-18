@@ -44,4 +44,15 @@ Caso de prueba:
 
 ![img_2.png](img_2.png)
 
+# Actividad 3
+
+## Students
+
+![students.drawio.png](src/JalaUniversityStudents/ClassDiagram/students.drawio.png)
+
+Casos de prueba:
+
+![img_3.png](img_3.png)
+ 
+
 
